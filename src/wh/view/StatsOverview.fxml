@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="596.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wh.view.StatsOverviewController">
+   <children>
+      <VBox alignment="CENTER" layoutY="25.0" prefHeight="91.0" prefWidth="282.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="218.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <GridPane alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="118.0" text="Imię:  " />
+                  <Label alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="118.0" text="Rasa:  " GridPane.rowIndex="1" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="118.0" text="Obecna profesja:  " GridPane.rowIndex="2" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="118.0" text="Poprzednia profesja:  " GridPane.rowIndex="3" />
+                  <Label fx:id="raceLabel" prefHeight="36.0" prefWidth="279.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="nameLabel" layoutX="136.0" layoutY="39.0" prefHeight="36.0" prefWidth="279.0" GridPane.columnIndex="1" />
+                  <Label fx:id="currentOccupationLabel" layoutX="136.0" layoutY="10.0" prefHeight="36.0" prefWidth="279.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="previousOccupationLabel" layoutX="136.0" layoutY="68.0" prefHeight="36.0" prefWidth="279.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.0" minWidth="10.0" prefWidth="119.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="382.0" minWidth="10.0" prefWidth="163.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox alignment="BOTTOM_CENTER" layoutY="4.0" prefHeight="21.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <Label text="BOHATER" />
+         </children>
+      </VBox>
+      <VBox alignment="BOTTOM_CENTER" layoutY="116.0" prefHeight="18.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="116.0">
+         <children>
+            <Label text="OPIS BOHATERA" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="134.0" prefHeight="66.0" prefWidth="480.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="134.0">
+         <children>
+            <GridPane>
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="76.0" text="Wiek:" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="58.0" text="Płeć:" GridPane.columnIndex="2" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="76.0" text="Kolor oczu:" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="63.0" text="Waga:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="76.0" text="Kolor włosów:" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="59.0" text="Wzrost:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label fx:id="ageLabel" prefHeight="36.0" prefWidth="163.0" GridPane.columnIndex="1" />
+                  <Label fx:id="eyesColorLabel" layoutX="89.0" layoutY="10.0" prefHeight="36.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="heightLabel" layoutX="89.0" layoutY="40.0" prefHeight="36.0" prefWidth="163.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Label fx:id="weightLabel" layoutX="89.0" layoutY="40.0" prefHeight="36.0" prefWidth="163.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Label fx:id="sexLabel" layoutX="89.0" layoutY="40.0" prefHeight="36.0" prefWidth="163.0" GridPane.columnIndex="3" />
+                  <Label fx:id="hairColorLabel" layoutX="89.0" layoutY="40.0" prefHeight="36.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="88.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="10.0" prefWidth="154.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="73.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="165.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="200.0" prefHeight="101.0" prefWidth="409.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="81.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Label text="PUNKTY DOŚWIADCZENIA" />
+            <GridPane prefHeight="30.0" prefWidth="440.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="60.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="160.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="4.0" prefWidth="60.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="160.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="70.0" text="Obecne: " />
+                  <Label alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="87.0" text="Razem: " GridPane.columnIndex="2" />
+                  <TextField fx:id="currentExpField" GridPane.columnIndex="1" />
+                  <TextField fx:id="allExpField" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <Label text="RUCH W WALCE" />
+            <GridPane>
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="63.0" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="96.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="74.0" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="96.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="81.0" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="96.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="49.0" text="Ruch: " />
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="49.0" text="Szarża: " GridPane.columnIndex="2" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="52.0" text="Bieg: " GridPane.columnIndex="4" />
+                  <TextField fx:id="movementField" GridPane.columnIndex="1" />
+                  <TextField fx:id="chargeField" GridPane.columnIndex="3" />
+                  <TextField fx:id="runField" GridPane.columnIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="13.0" layoutY="302.0" prefHeight="240.0" prefWidth="480.0">
+         <children>
+            <Label text="Label" />
+            <GridPane>
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="88.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="48.0" minWidth="0.0" prefWidth="46.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="46.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="113.0" minWidth="10.0" prefWidth="46.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="10.0" prefWidth="46.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="46.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="46.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="46.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.0" minWidth="10.0" prefWidth="46.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="91.0" text="Początkowa: " GridPane.rowIndex="1" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="91.0" text="Rozwój: " GridPane.rowIndex="2" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="95.0" text="Aktualna: " GridPane.rowIndex="3" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="30.0" prefHeight="23.0" prefWidth="53.0" text="Odp" GridPane.columnIndex="4" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="23.0" prefWidth="53.0" text="K" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="23.0" prefWidth="53.0" text="US" GridPane.columnIndex="2" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="23.0" prefWidth="53.0" text="WW" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="30.0" prefHeight="23.0" prefWidth="53.0" text="A" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="30.0" prefHeight="23.0" prefWidth="53.0" text="Ogd" GridPane.columnIndex="8" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="30.0" prefHeight="23.0" prefWidth="53.0" text="SW" GridPane.columnIndex="7" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="30.0" prefHeight="23.0" prefWidth="53.0" text="Int" GridPane.columnIndex="6" />
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="30.0" prefHeight="23.0" prefWidth="53.0" text="Zr" GridPane.columnIndex="5" />
+                  <TextField fx:id="initialWwField" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="developmentWwField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="initialOgdField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                  <TextField fx:id="initialSwField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <TextField fx:id="initialIntField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <TextField fx:id="initialZrField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <TextField fx:id="initialOdpField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <TextField fx:id="initialKField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="initialUsField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="currentOdpField" alignment="CENTER" layoutX="63.0" layoutY="67.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <TextField fx:id="currentKField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <TextField fx:id="currentUsField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="currentWwField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="developmentOgdField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                  <TextField fx:id="developmentSwField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                  <TextField fx:id="developmentIntField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                  <TextField fx:id="developmentZrField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <TextField fx:id="developmentOdpField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <TextField fx:id="developmentKField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <TextField fx:id="developmentUsField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="currentOgdField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                  <TextField fx:id="currentSwField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                  <TextField fx:id="currentIntField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <TextField fx:id="currentZrField" alignment="CENTER" layoutX="10.0" layoutY="11.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <TextField fx:id="developmentPoField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                  <TextField fx:id="developmentSzField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                  <TextField fx:id="developmentPpField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                  <TextField fx:id="developmentSField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <TextField fx:id="developmentZywField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <TextField fx:id="initialPpField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                  <TextField fx:id="initialPoField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                  <TextField fx:id="initialMagField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                  <TextField fx:id="initialSzField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <TextField fx:id="initialWtField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <TextField fx:id="initialSField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <TextField fx:id="initialZywField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <TextField fx:id="initialAField" alignment="CENTER" layoutX="63.0" layoutY="39.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="currentSzField" alignment="CENTER" layoutX="63.0" layoutY="151.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                  <TextField fx:id="currentWtField" alignment="CENTER" layoutX="63.0" layoutY="151.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                  <TextField fx:id="currentSField" alignment="CENTER" layoutX="63.0" layoutY="151.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <TextField fx:id="currentZywField" alignment="CENTER" layoutX="63.0" layoutY="151.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <TextField fx:id="currentAField" alignment="CENTER" layoutX="63.0" layoutY="151.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="developmentAField" alignment="CENTER" layoutX="63.0" layoutY="151.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="developmentMagField" alignment="CENTER" layoutX="63.0" layoutY="151.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                  <TextField fx:id="developmentWtField" alignment="CENTER" layoutX="63.0" layoutY="151.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <TextField fx:id="currentPpField" alignment="CENTER" layoutX="275.0" layoutY="207.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                  <TextField fx:id="currentPoField" alignment="CENTER" layoutX="275.0" layoutY="207.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                  <TextField fx:id="currentMagField" alignment="CENTER" layoutX="275.0" layoutY="207.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="40.0" prefHeight="23.0" prefWidth="91.0" text="Początkowa: " GridPane.rowIndex="5" />
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="67.0" prefHeight="25.0" prefWidth="91.0" text="Rozwój: " GridPane.rowIndex="6" />
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="99.0" prefHeight="17.0" prefWidth="95.0" text="Aktualna: " GridPane.rowIndex="7" />
+                  <Label alignment="CENTER" layoutX="101.0" layoutY="124.0" prefHeight="23.0" prefWidth="53.0" text="PP" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" layoutX="101.0" layoutY="124.0" prefHeight="23.0" prefWidth="53.0" text="PO" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" layoutX="101.0" layoutY="124.0" prefHeight="23.0" prefWidth="53.0" text="Mag" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" layoutX="101.0" layoutY="124.0" prefHeight="23.0" prefWidth="53.0" text="Sz" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" layoutX="101.0" layoutY="124.0" prefHeight="23.0" prefWidth="53.0" text="Wt" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" layoutX="101.0" layoutY="124.0" prefHeight="23.0" prefWidth="53.0" text="S" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Label alignment="CENTER" layoutX="101.0" layoutY="124.0" prefHeight="23.0" prefWidth="53.0" text="Żyw" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="237.0" layoutY="550.0" prefHeight="47.0" prefWidth="256.0" spacing="5.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="550.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleNewCharacter" text="Nowa..." />
+            <Button mnemonicParsing="false" onAction="#handleEditCharacter" text="Edytuj..." />
+            <Button mnemonicParsing="false" onAction="#handleSaveCharacter" text="Zapisz..." />
+            <Button mnemonicParsing="false" onAction="#handleDeleteCharacter" text="Usuń..." />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="300.0" layoutY="25.0" prefHeight="17.0" prefWidth="190.0" text="BOHATEROWIE" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="25.0" />
+      <ComboBox fx:id="choiceCharacterBox" layoutX="300.0" layoutY="46.0" prefHeight="25.0" prefWidth="190.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="46.0" />
+   </children>
+</AnchorPane>
